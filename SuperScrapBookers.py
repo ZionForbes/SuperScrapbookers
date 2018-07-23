@@ -1,6 +1,7 @@
 print "Scrap book"
 def setup():
     size(1900, 1000)
+    
 #photos
     rect(0, 0, 150, 100)
     rect(0, 100, 150, 100)
@@ -24,3 +25,10 @@ def setup():
 #pages
     rect(150, 0, 820, 1000)
     rect(950, 0, 820, 1000)
+    
+#photo frames
+    rect(230, 150, 250, 250)
+    rect(190, 550, 250, 250)
+    rect(400, 320, 300, 300)
+    rect(600, 90, 250, 250)
+   
