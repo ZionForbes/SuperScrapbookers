@@ -1,8 +1,7 @@
 print "Scrap book"
 def setup():
     size(1900, 1000)
-    
-#photo toolbar
+#photo toolbar L
     rect(0, 0, 75, 100)#1
     rect(75, 0, 75, 100)#2
     rect(0, 100, 75, 100)#3
@@ -23,9 +22,14 @@ def setup():
     rect(75, 800, 75, 100)#18
     rect(0, 900, 75, 100)#19
     rect(75, 900, 75, 100)#20
-    
 #toolbar R
+    #toolbar R
     rect(1770, 0, 130, 30)#sticker label
+    fill(0)
+    textSize(27)
+    text("Stickers",1785,25)
+    #Sticker
+    fill(255)
     rect(1770, 30, 65, 74)#1
     rect(1835, 30, 65, 74)#2
     rect(1770, 104, 65, 74)#3
@@ -42,22 +46,50 @@ def setup():
     rect(1770, 570, 130, 350)
     rect(1770, 920, 65, 80)#undo
     rect(1835, 920, 65, 80)#reset
-    
 #pages
     rect(150, 0, 820, 1000)
     rect(950, 0, 820, 1000)
-    
 #photo frames L
     rect(200, 120, 300, 250)
     rect(580, 630, 330, 260)
     rect(350, 350, 400, 300)
     rect(190, 670, 300, 250)
     rect(580, 80, 300, 250)
-    
 #photo frames R
     rect(1000, 80, 350, 250)
     rect(1365, 80, 350, 250)
     rect(1160, 365, 400, 280)
     rect(1000, 680, 350, 250)
     rect(1365, 680, 350, 250)
-
+#images
+    img = loadImage("Pic1.png")
+    image(img,0, 0, 75, 100)
+    img = loadImage("Pic2.png")
+    image(img,75, 0, 75, 100)
+    img = loadImage("Pic3.png")
+    image(img,0, 100, 75, 100)
+    img = loadImage("Pic4.png")
+    image(img,75, 100, 75, 100)
+    img = loadImage("Pic5.png")
+    image(img,0, 200, 75, 100)
+    img = loadImage("Pic6.png")
+    image(img,75, 200, 75, 100)
+    img = loadImage("Pic7.png")
+    image(img,0, 300, 75, 100)
+    img = loadImage("Pic8.png")
+    image(img,75, 300, 75, 100)
+    img = loadImage("Pic9.png")
+    image(img,0, 400, 75, 100)
+    img = loadImage("pic10.png")
+    image(img,75, 400, 75, 100)
+    img = loadImage("pic11.png")
+    image(img,0, 500, 75, 100)
+    img = loadImage("Pic12.png")
+    image(img,75, 500, 75, 100)
+    img = loadImage("pic13.png")
+    image(img,0, 600, 75, 100)
+    img = loadImage("Pic14.png")
+    image(img,75, 600, 75, 100)
+#stickers
+    
+    
