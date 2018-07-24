@@ -1,7 +1,7 @@
 print "Scrap book"
 def setup():
     size(1900, 1000)
-#photos
+#photo toolbar L
     rect(0, 0, 150, 100)
     rect(0, 100, 150, 100)
     rect(0, 200, 150, 100)
@@ -13,7 +13,7 @@ def setup():
     rect(0, 800, 150, 100)
     rect(0, 900, 150, 100)
     rect(0, 1000, 150, 100)
-#toolbar
+#toolbar R
     rect(1770, 0, 130, 266)
     rect(1770, 266, 130, 266)
     rect(1770, 532, 130, 266)
