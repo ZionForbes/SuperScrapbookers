@@ -91,5 +91,26 @@ def setup():
     img = loadImage("Pic14.png")
     image(img,75, 600, 75, 100)
 #stickers
+    img = loadImage("stick1.png")
+    image(img,1770, 30, 65, 74)
+    img = loadImage("stick2.png")
+    image(img,1835, 30, 65, 74)
+    img = loadImage("stick3.png")
+    image(img,1770, 104, 65, 74)
+    img = loadImage("stick4.png")
+    image(img,1835, 104, 65, 74)
+    img = loadImage("stick5.png")
+    image(img,1770, 178, 65, 74)
+    img = loadImage("stick6.png")
+    image(img,1835, 178, 65, 74)
+    img = loadImage("stick7.png")
+    image(img,1770, 252, 65, 74)
+    img = loadImage("stick8.png")
+    image(img,1835, 252, 65, 74)
+    img = loadImage("stick9.png")
+    image(img,1770, 326, 65, 74)
+    img = loadImage("stick10.png")
+    image(img,1835, 326, 65, 74)
+    
     
     
