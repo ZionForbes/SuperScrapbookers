@@ -4,6 +4,8 @@ def setup():
     size(1900, 1000)
     global BG 
     BG = None
+    global DictionaryList
+    
 #photo toolbar L
     # rect(0, 0, 75, 100)#1
     # rect(75, 0, 75, 100)#2
@@ -172,18 +174,6 @@ def setup():
     
     # dict= []
     # dict.append({"Type": "BG", "Filename":
-
-#def draw():
-    #print mouseX,mouseY
-    # global BG
-    # if BG:
-    #     image(BG,152,0,1615,1000)
-    # if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
-    #     BG = loadImage("BG1.png")
-    # if BG:
-    #     image(BG,152,0,1615,1000)
-    # if mousePressed and mouseX >=1835 and mouseX <=1900 and mouseY >=430 and mouseY <=485 :
-    #     BG = loadImage("BG2.png")
     
     DictionaryList= []
     # ImgList = ["Pic1.png", "Pic2.png", "Pic3.png", "Pic4.png", "Pic5.png",
@@ -305,7 +295,24 @@ def setup():
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         
 
-
+def draw():
+    global BG
+    for BGDict in DictionaryList:
+        BGDict.get("Type")
+        if BGDict.get("Type") == "Background":
+             if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
+                BG = loadImage("BG1.png")
+        
+            # {"Type": "Background", "Filename": "BG1.2.png", "x": 1770, "y": 430, "Width": 65, "Height": 55})
+        
+    #  if BG:
+    #      image(BG,152,0,1615,1000)
+    #  if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
+    #     BG = loadImage("BG1.png")
+    #  if BG:
+    #      image(BG,152,0,1615,1000)
+    # if mousePressed and mouseX >=1835 and mouseX <=1900 and mouseY >=430 and mouseY <=485 :
+    #      BG = loadImage("BG2.png")
 
     
     
