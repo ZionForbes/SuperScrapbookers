@@ -29,6 +29,7 @@ def setup():
     fill(0)
     textSize(27)
     text("Stickers",1785,25)
+
 #Sticker
     fill(255)
     rect(1770, 30, 65, 74)#1
@@ -42,41 +43,49 @@ def setup():
     rect(1770, 326, 65, 74)#9
     rect(1835, 326, 65, 74)#10
     
+#Background
     rect(1770, 400, 130, 30)#bg label
     fill(0)
     textSize(22)
     text("Background", 1773, 423)
-
     fill(255)
     rect(1770, 430, 65, 55)#1
     rect(1835, 430, 65, 55)#2
     rect(1770, 485, 65, 55)#3
     rect(1835, 485, 65, 55)#4
     
+#Music
     rect(1770, 540, 130, 30)#music label
     fill(0)
     textSize(25)
     text("Music", 1802, 565)
-
     fill(255)
     rect(1770, 570, 130, 350)
+    
+#undo
     rect(1770, 920, 65, 80)#undo
+    
+#new pages 
     rect(1835, 920, 65, 80)#reset
+    
 #pages
     rect(150, 0, 820, 1000)
     rect(950, 0, 820, 1000)
+    
 #photo frames L
     rect(200, 120, 300, 250)
     rect(580, 630, 330, 260)
     rect(350, 350, 400, 300)
     rect(190, 670, 300, 250)
     rect(580, 80, 300, 250)
+    
 #photo frames R
     rect(1000, 80, 350, 250)
     rect(1365, 80, 350, 250)
     rect(1160, 365, 400, 280)
     rect(1000, 680, 350, 250)
     rect(1365, 680, 350, 250)
+    
 #images
     img = loadImage("Pic1.png")
     image(img,0, 0, 75, 100)
@@ -106,6 +115,20 @@ def setup():
     image(img,0, 600, 75, 100)
     img = loadImage("Pic14.png")
     image(img,75, 600, 75, 100)
+    img = loadImage("Pic15.png")
+    image(img,0, 700, 75, 100)
+    img = loadImage("Pic16.png")
+    image(img,75, 700, 75, 100)
+    img = loadImage("Pic17.png")
+    image(img,0, 800, 75, 100)
+    img = loadImage("Pic18.png")
+    image(img,75, 800, 75, 100)
+    img = loadImage("Pic19.png")
+    image(img,0, 900, 75, 100)
+    img = loadImage("Pic20.png")
+    image(img,75, 900, 75, 100)
+    
+    
 #stickers
     img = loadImage("stick1.png")
     image(img,1770, 30, 65, 74)
@@ -127,6 +150,7 @@ def setup():
     image(img,1770, 326, 65, 74)
     img = loadImage("stick10.png")
     image(img,1835, 326, 65, 74)
+    
 #bakgrounds
     img = loadImage("BK1.png")
     image(img,1770, 430, 65, 55)
@@ -134,12 +158,10 @@ def setup():
     image(img,1835, 430, 65, 55)
     img = loadImage("BK3.png")
     image(img,1770, 485, 65, 55)
-    # img = loadImage("BK4.png")
-    # image(img,1835, 485, 65, 55)
-#drag/click
-#def draw():
- 1774,954   
-1848 ,948
+    img = loadImage("BK4.png")
+    image(img,1835, 485, 65, 55)
+
+
     
     
     
