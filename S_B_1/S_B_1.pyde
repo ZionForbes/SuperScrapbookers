@@ -2,6 +2,8 @@ print "Scrap book"
 def setup():
     
     size(1900, 1000)
+    global BG 
+    BG = None
 #photo toolbar L
     rect(0, 0, 75, 100)#1
     rect(75, 0, 75, 100)#2
@@ -73,18 +75,18 @@ def setup():
     rect(950, 0, 820, 1000)
     
 #photo frames L
-    rect(200, 120, 300, 250)
-    rect(580, 630, 330, 260)
-    rect(350, 350, 400, 300)
-    rect(190, 670, 300, 250)
-    rect(580, 80, 300, 250)
+#     rect(200, 120, 300, 250)
+#     rect(580, 630, 330, 260)
+#     rect(350, 350, 400, 300)
+#     rect(190, 670, 300, 250)
+#     rect(580, 80, 300, 250)
     
-#photo frames R
-    rect(1000, 80, 350, 250)
-    rect(1365, 80, 350, 250)
-    rect(1160, 365, 400, 280)
-    rect(1000, 680, 350, 250)
-    rect(1365, 680, 350, 250)
+ #photo frames R
+#     rect(1000, 80, 350, 250)
+#     rect(1365, 80, 350, 250)
+#     rect(1160, 365, 400, 280)
+#     rect(1000, 680, 350, 250)
+#     rect(1365, 680, 350, 250)
     
 #images
     img = loadImage("Pic1.png")
@@ -152,22 +154,31 @@ def setup():
     image(img,1835, 326, 65, 74)
     
 #bakgrounds
-    img = loadImage("BK1.png")
+
+    img = loadImage("BG1.2.png")
     image(img,1770, 430, 65, 55)
-    img = loadImage("BK2.png")
+    img = loadImage("BG2.2.png")
     image(img,1835, 430, 65, 55)
-    img = loadImage("BK3.png")
+    img = loadImage("BG3.2.png")
     image(img,1770, 485, 65, 55)
-    img = loadImage("BK4.png")
+    img = loadImage("BG4.2.png")
     image(img,1835, 485, 65, 55)
+    
+    # dict= []
+    # dict.append({"Type": "BG", "Filename":
 
-
+#def draw():
+    #print mouseX,mouseY
+    # global BG
+    # if BG:
+    #     image(BG,152,0,1615,1000)
+    # if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
+    #     BG = loadImage("BG1.png")
+    # if BG:
+    #     image(BG,152,0,1615,1000)
+    # if mousePressed and mouseX >=1835 and mouseX <=1900 and mouseY >=430 and mouseY <=485 :
+    #     BG = loadImage("BG2.png")
     
-    
-    
-    
-def draw():
-    print mouseX,mouseY
     
     
     
