@@ -1,10 +1,27 @@
+add_library("minim")
+
+def input(message=''):
+    from javax.swing import JOptionPane
+    return JOptionPane.showInputDialog(frame, message)
+
 print "Scrap book"
 def setup():
     
     size(1900, 1000)
-    global BG 
+    global BG, Song1, Song2, Song3, Song4, Song5, Song6, Choice, DictionaryList, CurrentIcon, BackgroundCondition
+    BackgroundCondition = True
+    CurrentIcon = None
+    Choice = input("Choose 1 - 6")
+    type(Choice)
+    minim = Minim(this)
+    Song1 = minim.loadFile("Biz Markie - Just a Friend.wav")
+    Song2 = minim.loadFile("Drake - In My Feelings.wav")
+    Song3 = minim.loadFile("Like Mike - We're Playing Basketball.wav")
+    Song4 = minim.loadFile("Miley Cyrus - Party in the USA.wav")
+    Song5 = minim.loadFile("Nicki Minaj - Chun Li.wav")
+    Song6 = minim.loadFile("Sister Sledge - We are Family.wav")
     BG = None
-    global DictionaryList
+
     
 #photo toolbar L
     # rect(0, 0, 75, 100)#1
@@ -280,24 +297,35 @@ def setup():
     DictionaryList.append({"Type": "Rectangle", "x": 1770, "y": 485, "Width": 65, "Height": 55})
     DictionaryList.append({"Type": "Rectangle", "x": 1835, "y": 485, "Width": 65, "Height": 55})
     
-    for Dictionaries in DictionaryList:
-        if Dictionaries["Type"] == "Rectangle":
-            noFill()
-            rect(Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
-        elif Dictionaries["Type"] == "Image":
-            img = Dictionaries["Filename"]
-            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
-        elif Dictionaries["Type"] == "Sticker":
-            img = Dictionaries["Filename"]
-            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
-        elif Dictionaries["Type"] == "Background":
-            img = Dictionaries["Filename"]
-            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+    # for Dictionaries in DictionaryList:
+    #     if Dictionaries["Type"] == "Rectangle":
+    #         noFill()
+    #         rect(Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+    #     elif Dictionaries["Type"] == "Image":
+    #         img = Dictionaries["Filename"]
+    #         image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+    #     elif Dictionaries["Type"] == "Sticker":
+    #         img = Dictionaries["Filename"]
+    #         image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+    #     elif Dictionaries["Type"] == "Background":
+    #         img = Dictionaries["Filename"]
+    #         image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         
+    
+
 
 def draw():
-    global BG
+    global BG, CurrentIcon, BackgroundCondition
     
+    if BackgroundCondition == True:
+        fill(255)
+        rect(150, 0, 820, 1000)
+        rect(950, 0, 820, 1000)
+    else:
+        image(BG, 150, 0, 1600, 1000)
+    
+
+                
     for Dictionaries in DictionaryList:
         if Dictionaries["Type"] == "Rectangle":
             noFill()
@@ -305,28 +333,71 @@ def draw():
         elif Dictionaries["Type"] == "Image":
             img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+            
+            if mousePressed and not CurrentIcon and mouseX >= Dictionaries["x"] and mouseX <= Dictionaries["x"] + 75 and mouseY >= Dictionaries["y"] and mouseY <= Dictionaries["y"] + 100:
+                 CurrentIcon = img
+                
         elif Dictionaries["Type"] == "Sticker":
             img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         elif Dictionaries["Type"] == "Background":
             img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+                
+    if Choice == "1":
+        Song1.play()
+    elif Choice == "2":
+        Song2.play()
+    elif Choice == "3":
+        Song3.play()
+    elif Choice == "4":
+        Song4.play()
+    elif Choice == "5":
+        Song5.play()
+    else:
+        Song6.play()
+        
     
+
+    
+    
+    if CurrentIcon:
+        image(CurrentIcon, mouseX, mouseY, 150, 200)
+        
+        
+        
     for BGDict in DictionaryList:
         # BGDict.get("Type")
         if BGDict["Type"] == "Background":
             if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
                 BG = loadImage("BG1.png")
-                image(BG,150,0,1600,1000)
+                #image(BG,150,0,1600,1000)
+                BackgroundCondition = False
             elif mousePressed and mouseX >= 1835 and mouseX <= 1900 and mouseY >= 430 and mouseY <= 485:
                 BG = loadImage("BG2.png")
-                image(BG,150,0,1600,1000)
+                #image(BG,150,0,1600,1000)
+                BackgroundCondition = False
             elif mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 485 and mouseY <= 540:
                 BG = loadImage("BG3.png")
-                image(BG,150,0,1600,1000)
+               # image(BG,150,0,1600,1000)
+                BackgroundCondition = False
             elif mousePressed and mouseX >= 1835 and mouseX <= 1900 and mouseY >= 485 and mouseY <= 540:
                 BG = loadImage("BG4.png")
-                image(BG,150,0,1600,1000)
+                #image(BG,150,0,1600,1000)
+                BackgroundCondition = False
+                
+    
+    
+def mouseReleased():
+    global CurrentIcon, DictionaryList
+   # DictionaryList.append({"Type": "Image"
+    CurrentIcon = None
+    
+        
+                
+    
+                
+                
                 
     
         
