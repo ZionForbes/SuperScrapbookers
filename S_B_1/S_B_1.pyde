@@ -362,7 +362,7 @@ def draw():
     
     
     if CurrentIcon:
-        image(CurrentIcon, mouseX, mouseY, 150, 200)
+        image(CurrentIcon, mouseX, mouseY,200,300)
         
         
         
