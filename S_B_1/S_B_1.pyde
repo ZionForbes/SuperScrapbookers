@@ -37,21 +37,21 @@ def setup():
     text("Stickers",1785,25)
 
 #Sticker
-    fill(255)
-    rect(1770, 30, 65, 74)#1
-    rect(1835, 30, 65, 74)#2
-    rect(1770, 104, 65, 74)#3
-    rect(1835, 104, 65, 74)#4
-    rect(1770, 178, 65, 74)#5
-    rect(1835, 178, 65, 74)#6
-    rect(1770, 252, 65, 74)#7
-    rect(1835, 252, 65, 74)#8
-    rect(1770, 326, 65, 74)#9
-    rect(1835, 326, 65, 74)#10
+    # fill(255)
+    # rect(1770, 30, 65, 74)#1
+    # rect(1835, 30, 65, 74)#2
+    # rect(1770, 104, 65, 74)#3
+    # rect(1835, 104, 65, 74)#4
+    # rect(1770, 178, 65, 74)#5
+    # rect(1835, 178, 65, 74)#6
+    # rect(1770, 252, 65, 74)#7
+    # rect(1835, 252, 65, 74)#8
+    # rect(1770, 326, 65, 74)#9
+    # rect(1835, 326, 65, 74)#10
     
 #Background
     rect(1770, 400, 130, 30)#bg label
-    fill(0)
+    fill(255)
     textSize(22)
     text("Background", 1773, 423)
     fill(255)
@@ -184,76 +184,76 @@ def setup():
     #     obj.append({"Type": "Image", "img" : loadImage(ImageName), "x": 
                           
     DictionaryList.append({"Type": "Image", 
-                           "Filename": "Pic1.png",
+                           "Filename": loadImage("Pic1.png"),
                            "x": 0, 
                            "y": 0,
                            "Width": 75,
                            "Height": 100 })
-    DictionaryList.append({"Type": "Image", "Filename": "Pic2.png", "x": 75, "y": 0,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic2.png"), "x": 75, "y": 0,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic3.png", "x": 0, "y": 100,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic3.png"), "x": 0, "y": 100,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic4.png", "x": 75, "y": 100,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic4.png"), "x": 75, "y": 100,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic5.png", "x": 0, "y": 200,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic5.png"), "x": 0, "y": 200,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic6.png", "x": 75, "y": 200,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic6.png"), "x": 75, "y": 200,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic7.png", "x": 0, "y": 300,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic7.png"), "x": 0, "y": 300,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic8.png", "x": 75, "y": 300,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic8.png"), "x": 75, "y": 300,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic9.png", "x": 0, "y": 400,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic9.png"), "x": 0, "y": 400,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "pic10.png", "x": 75, "y": 400,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("pic10.png"), "x": 75, "y": 400,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "pic11.png", "x": 0, "y": 500,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("pic11.png"), "x": 0, "y": 500,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic12.png", "x": 75, "y": 500,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic12.png"), "x": 75, "y": 500,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "pic13.png", "x": 0, "y": 600,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("pic13.png"), "x": 0, "y": 600,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic14.png", "x": 75, "y": 600,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic14.png"), "x": 75, "y": 600,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic15.png", "x": 0, "y": 700,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic15.png"), "x": 0, "y": 700,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic16.png", "x": 75, "y": 700,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic16.png"), "x": 75, "y": 700,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic17.png", "x": 0, "y": 800,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic17.png"), "x": 0, "y": 800,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic18.png", "x": 75, "y": 800,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic18.png"), "x": 75, "y": 800,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic19.png", "x": 0, "y": 900,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic19.png"), "x": 0, "y": 900,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Image", "Filename": "Pic20.png", "x": 75, "y": 900,
+    DictionaryList.append({"Type": "Image", "Filename": loadImage("Pic20.png"), "x": 75, "y": 900,
                            "Width": 75, "Height": 100})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick1.png", "x": 1770, "y": 30,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick1.png"), "x": 1770, "y": 30,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick2.png", "x": 1835, "y": 30,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick2.png"), "x": 1835, "y": 30,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick3.png", "x": 1770, "y": 104,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick3.png"), "x": 1770, "y": 104,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick4.png", "x": 1835, "y": 104,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick4.png"), "x": 1835, "y": 104,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick5.png", "x": 1770, "y": 178,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick5.png"), "x": 1770, "y": 178,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick6.png", "x": 1835, "y": 178,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick6.png"), "x": 1835, "y": 178,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick7.png", "x": 1770, "y": 252,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick7.png"), "x": 1770, "y": 252,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick8.png", "x": 1835, "y": 252,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick8.png"), "x": 1835, "y": 252,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick9.png", "x": 1770, "y": 326,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick9.png"), "x": 1770, "y": 326,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Sticker", "Filename": "stick10.png", "x": 1835, "y": 326,
+    DictionaryList.append({"Type": "Sticker", "Filename": loadImage("stick10.png"), "x": 1835, "y": 326,
                            "Width": 65, "Height": 74})
-    DictionaryList.append({"Type": "Background", "Filename": "BG1.2.png", "x": 1770, "y": 430,
+    DictionaryList.append({"Type": "Background", "Filename": loadImage("BG1.2.png"), "x": 1770, "y": 430,
                            "Width": 65, "Height": 55})
-    DictionaryList.append({"Type": "Background", "Filename": "BG2.2.png", "x": 1835, "y": 430,
+    DictionaryList.append({"Type": "Background", "Filename": loadImage("BG2.2.png"), "x": 1835, "y": 430,
                            "Width": 65, "Height": 55})
-    DictionaryList.append({"Type": "Background", "Filename": "BG3.2.png", "x": 1770, "y": 485,
+    DictionaryList.append({"Type": "Background", "Filename": loadImage("BG3.2.png"), "x": 1770, "y": 485,
                            "Width": 65, "Height": 55})
-    DictionaryList.append({"Type": "Background", "Filename": "BG4.2.png", "x": 1835, "y": 485,
+    DictionaryList.append({"Type": "Background", "Filename": loadImage("BG4.2.png"), "x": 1835, "y": 485,
                            "Width": 65, "Height": 55})
     DictionaryList.append({"Type": "Rectangle", "x": 0, "y": 0, "Width": 75, "Height": 100})
     DictionaryList.append({"Type": "Rectangle", "x": 75, "y": 0, "Width": 75, "Height": 100})
@@ -285,36 +285,53 @@ def setup():
             noFill()
             rect(Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         elif Dictionaries["Type"] == "Image":
-            img = loadImage(Dictionaries["Filename"])
+            img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         elif Dictionaries["Type"] == "Sticker":
-            img = loadImage(Dictionaries["Filename"])
+            img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         elif Dictionaries["Type"] == "Background":
-            img = loadImage(Dictionaries["Filename"])
+            img = Dictionaries["Filename"]
             image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
         
 
 def draw():
     global BG
-    for BGDict in DictionaryList:
-        BGDict.get("Type")
-        if BGDict.get("Type") == "Background":
-             if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
-                BG = loadImage("BG1.png")
-        
-            # {"Type": "Background", "Filename": "BG1.2.png", "x": 1770, "y": 430, "Width": 65, "Height": 55})
-        
-    #  if BG:
-    #      image(BG,152,0,1615,1000)
-    #  if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
-    #     BG = loadImage("BG1.png")
-    #  if BG:
-    #      image(BG,152,0,1615,1000)
-    # if mousePressed and mouseX >=1835 and mouseX <=1900 and mouseY >=430 and mouseY <=485 :
-    #      BG = loadImage("BG2.png")
-
     
+    for Dictionaries in DictionaryList:
+        if Dictionaries["Type"] == "Rectangle":
+            noFill()
+            rect(Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+        elif Dictionaries["Type"] == "Image":
+            img = Dictionaries["Filename"]
+            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+        elif Dictionaries["Type"] == "Sticker":
+            img = Dictionaries["Filename"]
+            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+        elif Dictionaries["Type"] == "Background":
+            img = Dictionaries["Filename"]
+            image(img, Dictionaries["x"], Dictionaries["y"], Dictionaries["Width"], Dictionaries["Height"])
+    
+    for BGDict in DictionaryList:
+        # BGDict.get("Type")
+        if BGDict["Type"] == "Background":
+            if mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 430 and mouseY <= 485:
+                BG = loadImage("BG1.png")
+                image(BG,150,0,1600,1000)
+            elif mousePressed and mouseX >= 1835 and mouseX <= 1900 and mouseY >= 430 and mouseY <= 485:
+                BG = loadImage("BG2.png")
+                image(BG,150,0,1600,1000)
+            elif mousePressed and mouseX >= 1770 and mouseX <= 1835 and mouseY >= 485 and mouseY <= 540:
+                BG = loadImage("BG3.png")
+                image(BG,150,0,1600,1000)
+            elif mousePressed and mouseX >= 1835 and mouseX <= 1900 and mouseY >= 485 and mouseY <= 540:
+                BG = loadImage("BG4.png")
+                image(BG,150,0,1600,1000)
+                
+    
+        
+        
+       
     
     
     
